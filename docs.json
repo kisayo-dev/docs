@@ -19,9 +19,9 @@
   },
   "background": {
     "color": {
-      "dark": "#190600"
+      "dark": "#070200"
     },
-    "decoration": "gradient"
+    "decoration": "grid"
   },
   "navigation": {
     "anchors": [
@@ -98,5 +98,8 @@
       "github": "https://github.com/kisayo",
       "linkedin": "https://linkedin.com/company/kisayo"
     }
+  },
+  "fonts": {
+    "family": "Poppins"
   }
 }
