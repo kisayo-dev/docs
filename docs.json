@@ -10,8 +10,12 @@
   "colors": {
     "primary": "#FF9F24",
     "light": "#E5C8AC",
-    "dark": "#000000"
+    "dark": "#000000",
+    "background": {
+      "dark": "#050505"
+    }
   },
+  "backgroundImage": "/grid.svg",
   "appearance": {
     "defaultMode": "dark",
     "forceMode": true

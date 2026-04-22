@@ -1,7 +1,7 @@
 ---
 title: "Bienvenue sur Kisayo Lab"
 description: "De l’apprentissage à la création. Suivez nos guides, connectez vos APIs et automatisez vos services en quelques minutes."
-mode: "wide"
+mode: "center"
 noSidebar: true
 hideToc: true
 ---
@@ -9,49 +9,86 @@ hideToc: true
 <div className="h-5" />
 
 <CardGroup cols={3}>
-  <Card title="Guide de l'interface Pro" icon="leaf" href="/guides/interface-pro">
-    Maîtrisez l'interface de Kisayo for business et découvrez toutes les fonctionnalités disponibles pour booster votre visibilité.
-    <img src="/logo/pro-guide.png" alt="Interface Pro" className="mt-4 rounded-xl border border-white/5" />
+  <Card 
+    title="Interface Pro" 
+    icon="leaf" 
+    href="/guides/interface-pro"
+  >
+    <div className="flex flex-col h-full justify-between">
+      <p className="text-sm">Maîtrisez l'interface pro et découvrez toutes les fonctionnalités disponibles pour booster votre visibilité.</p>
+      <img src="/logo/pro-guide.png" className="mt-4 rounded-xl border border-white/10 group-hover:border-orange-500/30" />
+    </div>
   </Card>
-  <Card title="Widget & intégration" icon="link" href="/guides/widgets">
-    Intégrez nos widgets directement sur votre site pour afficher vos avis et renforcer votre preuve sociale.
-    <img src="/logo/widgets.png" alt="Widgets" className="mt-4 rounded-xl border border-white/5" />
+  <Card title="Widgets et intégration" icon="link" href="/guides/widgets">
+    <div className="flex flex-col h-full justify-between">
+      <p className="text-sm">Intégrez nos widgets directement sur votre site pour afficher vos avis et renforcer votre preuve sociale.</p>
+      <img src="/logo/widgets.png" className="mt-4 rounded-xl border border-white/10 group-hover:border-orange-500/30" />
+    </div>
   </Card>
   <Card title="Référence API" icon="code" href="/api-reference/introduction">
-    Documentation technique complète pour les développeurs backend (Endpoints, Auth, Webhooks).
-    <img src="/logo/api-ref.png" alt="API Reference" className="mt-4 rounded-xl border border-white/5" />
+    <div className="flex flex-col h-full justify-between">
+      <p className="text-sm">Intégrez nos widgets directement sur votre site pour afficher vos avis et renforcer votre preuve sociale.</p>
+      <img src="/logo/api-ref.png" className="mt-4 rounded-xl border border-white/10 group-hover:border-orange-500/30" />
+    </div>
   </Card>
 </CardGroup>
 
 <div className="h-20" />
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-  <div className="flex flex-col justify-center">
-    ## Intégrez l'API en 5 minutes
-    
-    Configurer votre premier appel API doit être l'étape la plus simple de votre intégration. Avec des endpoints clairs, des exemples prêts à l'emploi et une authentification rapide, vous serez opérationnel en quelques minutes.
+<div className="relative mt-12 rounded-3xl overflow-hidden border border-white/5 bg-[#050505]">
+  {/* Fond : Grille technique discrète */}
+  <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:32px_32px]" />
 
-    <div className="flex gap-4 mt-10">
-      <a href="/quickstart" className="bg-[#FF9F24] text-white px-6 py-2.5 rounded-lg font-bold no-underline hover:opacity-90 flex items-center gap-2 transition-all">
-        <Icon icon="rocket" /> Commencer
-      </a>
-      <a href="/api-reference" className="border border-white/20 text-white px-6 py-2.5 rounded-lg font-bold no-underline hover:bg-white/5 flex items-center gap-2 transition-all">
-        <Icon icon="code" /> Référence API
-      </a>
+  <div className="relative grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-12 items-center px-8 md:px-16 py-16">
+    {/* Colonne de texte : 40% de largeur */}
+    <div className="space-y-6">
+      <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-white/5 border border-white/10 text-gray-400 text-[10px] font-bold uppercase tracking-widest">
+        <Icon icon="bolt" /> Rapide & Simple
+      </div>
+      <h2 className="text-4xl font-extrabold tracking-tight text-white leading-[1.1]">Intégrez l'API en 5 minutes</h2>
+      <p className="text-gray-400 text-base leading-relaxed max-w-sm">
+        Configurer votre premier appel API doit être l'étape la plus simple de votre intégration. 
+        Avec nos exemples, vous serez opérationnel instantanément.
+      </p>
+      
+      {/* Boutons format "Fin" (py-2 max) */}
+      <div className="flex gap-3 pt-2">
+        <a href="/quickstart" className="bg-[#FF9F24] text-white px-4 py-2 rounded-lg font-bold no-underline hover:opacity-90 transition-all flex items-center gap-2 text-[13px]">
+          <Icon icon="rocket" className="w-3.5 h-3.5" /> Commencer
+        </a>
+        <a href="/api-reference" className="bg-white/5 border border-white/10 text-white px-4 py-2 rounded-lg font-bold no-underline hover:bg-white/10 transition-all flex items-center gap-2 text-[13px]">
+          <Icon icon="terminal" className="w-3.5 h-3.5" /> Référence API
+        </a>
+      </div>
     </div>
-  </div>
 
-  <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-[#0d1117]">
-    ```javascript Index.js
-    import Kisayo from "kisayo-sdk";
+    {/* Colonne de Code : 60% de largeur pour une visibilité maximale */}
+    <div className="relative rounded-xl overflow-hidden border border-white/10 shadow-2xl bg-[#0d1117]/90 backdrop-blur-sm w-full">
+      <div className="flex items-center justify-between px-4 py-3 bg-white/5 border-b border-white/5">
+        <div className="flex items-center gap-2">
+          <div className="flex gap-1.5">
+            <div className="w-2.5 h-2.5 rounded-full bg-red-500/20" />
+            <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/20" />
+            <div className="w-2.5 h-2.5 rounded-full bg-green-500/20" />
+          </div>
+          <span className="ml-3 text-[11px] text-gray-500 font-mono uppercase tracking-widest">index.js</span>
+        </div>
+        <Icon icon="copy" className="w-4 h-4 text-gray-600" />
+      </div>
+      <div className="p-6 text-[14px]">
+        ```javascript
+        import Kisayo from "kisayo-sdk";
 
-    const client = new Kisayo({ apiKey: "VOTRE_CLE_API" });
+        // Initialisation du client avec votre clé
+        const client = new Kisayo({ apiKey: "VOTRE_CLE_API" });
 
-    // Récupération de votre score de confiance
-    const stats = await client.companies.getStats("company_id");
+        // Récupération de votre score de confiance (Power Score)
+        const stats = await client.companies.getStats("company_id");
 
-    console.log(`Votre K-Score est de : ${stats.power_score}`);
-    ```
+        console.log(`Votre K-Score est de : ${stats.power_score}`);
+        ```
+      </div>
+    </div>
   </div>
 </div>
 
