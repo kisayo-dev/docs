@@ -1,49 +1,79 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Kisayo Lab",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#FF9F24",
+    "light": "#E5C8AC",
+    "dark": "#000000"
   },
-  "favicon": "/favicon.svg",
+  "appearance": {
+    "defaultMode": "dark",
+    "forceMode": false
+  },
+  "favicon": "/logo.png",
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "icon": "book-open-cover",
-          "href": "https://mintlify.com/docs"
-        },
-        {
-          "anchor": "Blog",
-          "icon": "newspaper",
-          "href": "https://mintlify.com/blog"
-        }
-      ]
-    },
+    "anchors": [
+      {
+        "anchor": "Home",
+        "icon": "house",
+        "href": "index"
+      },
+      {
+        "anchor": "Documentation",
+        "icon": "book-open",
+        "href": "/introduction"
+      },
+      {
+        "anchor": "API Reference",
+        "icon": "code",
+        "href": "/api-reference"
+      },
+      {
+        "anchor": "Changelog",
+        "icon": "clock-rotate-left",
+        "href": "/changelog"
+      },
+      {
+        "anchor": "Help Center",
+        "icon": "circle-question",
+        "href": "https://help.kisayo.com"
+      }
+    ],
     "tabs": [
+      {
+        "tab": "Kisayo Lab",
+        "pages": [
+          "index"
+        ]
+      },
       {
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Pour commencer",
             "pages": [
-              "index",
               "quickstart",
               "development"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Interface Pro",
+            "pages": [
+              "guides/interface-pro",
+              "guides/widgets",
+              "guides/integrations"
+            ]
+          },
+          {
+            "group": "Personnalisation",
             "pages": [
               "essentials/settings",
               "essentials/navigation"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Contenu",
             "pages": [
               "essentials/markdown",
               "essentials/code",
@@ -52,7 +82,7 @@
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Outils IA",
             "pages": [
               "ai-tools/cursor",
               "ai-tools/claude-code",
@@ -62,16 +92,16 @@
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "API Reference",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Documentation API",
             "pages": [
               "api-reference/introduction"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Endpoints",
             "pages": [
               "api-reference/endpoint/get",
               "api-reference/endpoint/create",
@@ -84,39 +114,27 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo-2.png",
+    "dark": "/logo-2.png"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@kisayo.com"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://dashboard.kisayo.com"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/kisayo",
+      "github": "https://github.com/kisayo",
+      "linkedin": "https://linkedin.com/company/kisayo"
     }
   }
 }

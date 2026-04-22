@@ -1,63 +1,106 @@
 ---
-title: "Bienvenue sur Kisayo Lab"
-description: "De l’apprentissage à la création.
-Suivez nos guides, connectez vos APIs et automatisez vos services en quelques minutes."
+title: "Kisayo Lab"
+description: "De l’apprentissage à la création. Suivez nos guides, connectez vos APIs et automatisez vos services en quelques minutes."
+mode: "wide"
+noSidebar: true
+hideToc: true
 ---
 
-## Setting up
+<div className="flex flex-col items-center justify-center -mt-10 mb-12">
+  <div className="flex gap-3">
+    <Button href="https://dashboard.kisayo.com" variant="primary" rounded="full">
+      S'inscrire
+    </Button>
+    <Button href="https://dashboard.kisayo.com" variant="secondary" rounded="full">
+      Se connecter
+    </Button>
+  </div>
+</div>
 
-Get your documentation site up and running in minutes.
-
-<Card title="Start here" icon="rocket" horizontal href="/quickstart">
-  Follow our three step quickstart guide.
-</Card>
-
-## Make it yours
-
-Design a docs site that looks great and empowers your users.
-
-<Columns cols={2}>
-  <Card title="Edit locally" icon="pen-to-square" href="/development">
-    Edit your docs locally and preview them in real time.
+<CardGroup cols={3}>
+  <Card title="Guide de l'interface Pro" icon="leaf" href="/guides/interface-pro">
+    Maîtrisez l'interface de Kisayo for business et découvrez toutes les fonctionnalités disponibles pour booster votre visibilité.
+    <img src="/logo/pro-guide.png" alt="Interface Pro" className="mt-4" />
   </Card>
-
-  <Card title="Customize your site" icon="palette" href="/essentials/settings">
-    Customize the design and colors of your site to match your brand.
+  <Card title="Widget & intégration" icon="link" href="/guides/widgets">
+    Intégrez nos widgets directement sur votre site pour afficher vos avis et renforcer votre preuve sociale.
+    <img src="/logo/widgets.png" alt="Widgets" className="mt-4" />
   </Card>
-
-  <Card title="Set up navigation" icon="map" href="/essentials/navigation">
-    Organize your docs to help users find what they need and succeed with your product.
+  <Card title="Référence API" icon="code" href="/api-reference/introduction">
+    Documentation technique complète pour les développeurs backend (Endpoints, Auth, Webhooks).
+    <img src="/logo/api-ref.png" alt="API Reference" className="mt-4" />
   </Card>
+</CardGroup>
 
-  <Card title="API documentation" icon="terminal" href="/api-reference/introduction">
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-24 items-center">
+  <div className="flex flex-col justify-center">
+    ## Intégrez l'API en 5 minutes
+    
+    Configurer votre premier appel API doit être l'étape la plus simple de votre intégration. Avec des endpoints clairs, des exemples prêts à l'emploi et une authentification rapide, vous serez opérationnel en quelques minutes.
 
-## Create beautiful pages
+    <div className="flex gap-4 mt-8">
+      <Button href="/quickstart" icon="rocket" variant="primary">
+        Commencer
+      </Button>
+      <Button href="/api-reference" icon="code" variant="outline">
+        Référence API
+      </Button>
+    </div>
+  </div>
 
-Everything you need to create world-class documentation.
+  <div className="prose-code:bg-transparent">
+    ```javascript Index.js
+    // Import du SDK Kisayo
+    import Kisayo from "kisayo-sdk";
 
-<Columns cols={2}>
-  <Card title="Write with MDX" icon="pen-fancy" href="/essentials/markdown">
-    Use MDX to style your docs pages.
-  </Card>
+    // Initialisation du client avec votre clé API
+    const client = new Kisayo({ apiKey: "VOTRE_CLE_API" });
 
-  <Card title="Code samples" icon="code" href="/essentials/code">
-    Add sample code to demonstrate how to use your product.
-  </Card>
+    // Récupération de votre score de confiance
+    const stats = await client.companies.getStats("company_id");
 
-  <Card title="Images" icon="image" href="/essentials/images">
-    Display images and other media.
-  </Card>
+    console.log(`Votre K-Score est de : ${stats.power_score}`);
+    ```
+  </div>
+</div>
 
-  <Card title="Reusable snippets" icon="recycle" href="/essentials/reusable-snippets">
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-32 items-center">
+  <div className="rounded-2xl overflow-hidden bg-white/5 border border-white/10 flex items-center justify-center p-4">
+    <img 
+      src="/images/knowledge-illustration.png" 
+      alt="Approfondir vos connaissances" 
+      className="w-full max-w-sm"
+    />
+  </div>
 
-## Need inspiration?
+  <div>
+    ## 📚 Approfondir vos connaissances
+    
+    Apprenez-en plus sur la plateforme, consultez nos guides détaillés et découvrez comment intégrer Kisayo à votre stack technique.
 
-<Card title="See complete examples" icon="stars" href="https://mintlify.com/customers">
-  Browse our showcase of exceptional documentation sites.
-</Card>
+    <div className="flex gap-4 mt-8">
+      <Button href="/guides" icon="book-open" variant="primary">
+        Guides
+      </Button>
+      <Button href="/documentation" icon="file-lines" variant="outline">
+        Documentation Complète
+      </Button>
+    </div>
+  </div>
+</div>
+
+<div className="mt-32 mb-20 text-center max-w-4xl mx-auto">
+  ## Rejoignez une communauté de +3 000 développeurs
+  
+  Posez vos questions, obtenez de l'aide et partagez vos ressources avec d'autres développeurs passionnés.
+
+  <div className="mt-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+    <a href="https://discord.gg/kisayo" target="_blank" className="block border-none">
+      <img 
+        src="/images/discord-banner.jpeg" 
+        alt="Rejoignez notre Discord" 
+        className="w-full hover:scale-[1.02] transition-transform duration-500"
+      />
+    </a>
+  </div>
+</div>
