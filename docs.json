@@ -2,6 +2,11 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Kisayo Lab",
+  "logo": {
+    "light": "/logo-2.png",
+    "dark": "/logo-2.png"
+  },
+  "favicon": "/logo.png",
   "colors": {
     "primary": "#FF9F24",
     "light": "#E5C8AC",
@@ -9,9 +14,8 @@
   },
   "appearance": {
     "defaultMode": "dark",
-    "forceMode": false
+    "forceMode": true
   },
-  "favicon": "/logo.png",
   "navigation": {
     "anchors": [
       {
@@ -20,73 +24,36 @@
         "href": "index"
       },
       {
-        "anchor": "Documentation",
-        "icon": "book-open",
-        "href": "/introduction"
-      },
-      {
-        "anchor": "API Reference",
-        "icon": "code",
-        "href": "/api-reference"
-      },
-      {
         "anchor": "Changelog",
         "icon": "clock-rotate-left",
         "href": "/changelog"
-      },
-      {
-        "anchor": "Help Center",
-        "icon": "circle-question",
-        "href": "https://help.kisayo.com"
       }
     ],
     "tabs": [
       {
         "tab": "Kisayo Lab",
-        "pages": [
-          "index"
-        ]
+        "pages": ["index"]
       },
       {
         "tab": "Guides",
         "groups": [
           {
-            "group": "Pour commencer",
-            "pages": [
-              "quickstart",
-              "development"
-            ]
-          },
-          {
             "group": "Interface Pro",
             "pages": [
               "guides/interface-pro",
-              "guides/widgets",
-              "guides/integrations"
+              "guides/vue-generale",
+              "guides/reputation",
+              "guides/entreprise",
+              "guides/developpeurs",
+              "guides/abonnements"
             ]
           },
           {
-            "group": "Personnalisation",
+            "group": "Intégration",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Contenu",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "Outils IA",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "guides/webhooks",
+              "guides/notifier",
+              "guides/securite-authentification"
             ]
           }
         ]
@@ -96,9 +63,7 @@
         "groups": [
           {
             "group": "Documentation API",
-            "pages": [
-              "api-reference/introduction"
-            ]
+            "pages": ["api-reference/introduction"]
           },
           {
             "group": "Endpoints",
@@ -113,17 +78,7 @@
       }
     ]
   },
-  "logo": {
-    "light": "/logo-2.png",
-    "dark": "/logo-2.png"
-  },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@kisayo.com"
-      }
-    ],
     "primary": {
       "type": "button",
       "label": "Dashboard",

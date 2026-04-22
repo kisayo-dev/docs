@@ -1,59 +1,50 @@
 ---
-title: "Kisayo Lab"
+title: "Bienvenue sur Kisayo Lab"
 description: "De l’apprentissage à la création. Suivez nos guides, connectez vos APIs et automatisez vos services en quelques minutes."
 mode: "wide"
 noSidebar: true
 hideToc: true
 ---
 
-<div className="flex flex-col items-center justify-center -mt-10 mb-12">
-  <div className="flex gap-3">
-    <Button href="https://dashboard.kisayo.com" variant="primary" rounded="full">
-      S'inscrire
-    </Button>
-    <Button href="https://dashboard.kisayo.com" variant="secondary" rounded="full">
-      Se connecter
-    </Button>
-  </div>
-</div>
+<div className="h-5" />
 
 <CardGroup cols={3}>
   <Card title="Guide de l'interface Pro" icon="leaf" href="/guides/interface-pro">
     Maîtrisez l'interface de Kisayo for business et découvrez toutes les fonctionnalités disponibles pour booster votre visibilité.
-    <img src="/logo/pro-guide.png" alt="Interface Pro" className="mt-4" />
+    <img src="/logo/pro-guide.png" alt="Interface Pro" className="mt-4 rounded-xl border border-white/5" />
   </Card>
   <Card title="Widget & intégration" icon="link" href="/guides/widgets">
     Intégrez nos widgets directement sur votre site pour afficher vos avis et renforcer votre preuve sociale.
-    <img src="/logo/widgets.png" alt="Widgets" className="mt-4" />
+    <img src="/logo/widgets.png" alt="Widgets" className="mt-4 rounded-xl border border-white/5" />
   </Card>
   <Card title="Référence API" icon="code" href="/api-reference/introduction">
     Documentation technique complète pour les développeurs backend (Endpoints, Auth, Webhooks).
-    <img src="/logo/api-ref.png" alt="API Reference" className="mt-4" />
+    <img src="/logo/api-ref.png" alt="API Reference" className="mt-4 rounded-xl border border-white/5" />
   </Card>
 </CardGroup>
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-24 items-center">
+<div className="h-20" />
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
   <div className="flex flex-col justify-center">
     ## Intégrez l'API en 5 minutes
     
     Configurer votre premier appel API doit être l'étape la plus simple de votre intégration. Avec des endpoints clairs, des exemples prêts à l'emploi et une authentification rapide, vous serez opérationnel en quelques minutes.
 
-    <div className="flex gap-4 mt-8">
-      <Button href="/quickstart" icon="rocket" variant="primary">
-        Commencer
-      </Button>
-      <Button href="/api-reference" icon="code" variant="outline">
-        Référence API
-      </Button>
+    <div className="flex gap-4 mt-10">
+      <a href="/quickstart" className="bg-[#FF9F24] text-white px-6 py-2.5 rounded-lg font-bold no-underline hover:opacity-90 flex items-center gap-2 transition-all">
+        <Icon icon="rocket" /> Commencer
+      </a>
+      <a href="/api-reference" className="border border-white/20 text-white px-6 py-2.5 rounded-lg font-bold no-underline hover:bg-white/5 flex items-center gap-2 transition-all">
+        <Icon icon="code" /> Référence API
+      </a>
     </div>
   </div>
 
-  <div className="prose-code:bg-transparent">
+  <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-[#0d1117]">
     ```javascript Index.js
-    // Import du SDK Kisayo
     import Kisayo from "kisayo-sdk";
 
-    // Initialisation du client avec votre clé API
     const client = new Kisayo({ apiKey: "VOTRE_CLE_API" });
 
     // Récupération de votre score de confiance
@@ -64,12 +55,14 @@ hideToc: true
   </div>
 </div>
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-32 items-center">
-  <div className="rounded-2xl overflow-hidden bg-white/5 border border-white/10 flex items-center justify-center p-4">
+<div className="h-20" />
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+  <div className="rounded-2xl overflow-hidden bg-white/5 border border-white/10 p-8 flex justify-center shadow-inner">
     <img 
       src="/images/knowledge-illustration.png" 
       alt="Approfondir vos connaissances" 
-      className="w-full max-w-sm"
+      className="w-full max-w-sm drop-shadow-2xl"
     />
   </div>
 
@@ -78,29 +71,33 @@ hideToc: true
     
     Apprenez-en plus sur la plateforme, consultez nos guides détaillés et découvrez comment intégrer Kisayo à votre stack technique.
 
-    <div className="flex gap-4 mt-8">
-      <Button href="/guides" icon="book-open" variant="primary">
-        Guides
-      </Button>
-      <Button href="/documentation" icon="file-lines" variant="outline">
-        Documentation Complète
-      </Button>
+    <div className="flex gap-4 mt-10">
+      <a href="/guides" className="bg-[#FF9F24] text-white px-6 py-2.5 rounded-lg font-bold no-underline hover:opacity-90 flex items-center gap-2 transition-all">
+        <Icon icon="book-open" /> Guides
+      </a>
+      <a href="/documentation" className="border border-white/20 text-white px-6 py-2.5 rounded-lg font-bold no-underline hover:bg-white/5 flex items-center gap-2 transition-all">
+        <Icon icon="file-lines" /> Documentation
+      </a>
     </div>
   </div>
 </div>
 
-<div className="mt-32 mb-20 text-center max-w-4xl mx-auto">
+<div className="h-20" />
+
+<div className="text-center max-w-4xl mx-auto px-4">
   ## Rejoignez une communauté de +3 000 développeurs
   
   Posez vos questions, obtenez de l'aide et partagez vos ressources avec d'autres développeurs passionnés.
 
-  <div className="mt-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+  <div className="mt-14 rounded-3xl overflow-hidden border border-white/10 shadow-2xl group transition-all hover:border-orange-500/30">
     <a href="https://discord.gg/kisayo" target="_blank" className="block border-none">
       <img 
         src="/images/discord-banner.jpeg" 
         alt="Rejoignez notre Discord" 
-        className="w-full hover:scale-[1.02] transition-transform duration-500"
+        className="w-full group-hover:scale-[1.01] transition-transform duration-700"
       />
     </a>
   </div>
 </div>
+
+<div className="h-24" />
