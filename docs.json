@@ -44,6 +44,7 @@
             "pages": [
               {
                 "group": "Vue générale",
+                "icon": "grid-2",
                 "pages": [
                   "guides/interface/vue_generale/dashboard",
                   "guides/interface/vue_generale/analyse"
@@ -51,6 +52,7 @@
               },
               {
                 "group": "Réputation",
+                "icon": "star",
                 "pages": [
                   "guides/interface/reputation/avis",
                   "guides/interface/reputation/collecte",
@@ -60,6 +62,7 @@
               },
               {
                 "group": "Entreprise",
+                "icon": "building",
                 "pages": [
                   "guides/interface/entreprise/fiche",
                   "guides/interface/entreprise/membres"
@@ -67,6 +70,7 @@
               },
               {
                 "group": "Développeurs",
+                "icon": "code",
                 "pages": [
                   "guides/interface/developer/integrations"
                 ]
@@ -80,9 +84,10 @@
               {
                 "group": "Webhooks",
                 "pages": [
-                  "guides/webhooks/what",
+                  "guides/webhook/what",
                   {
                     "group": "Config",
+                    "icon": "gear",
                     "pages": [
                       "guides/webhook/config/woocommerce",
                       "guides/webhook/config/shopify",
@@ -98,6 +103,7 @@
                   "guides/notifier/what",
                   {
                     "group": "Config",
+                    "icon": "gear",
                     "pages": [
                       "guides/notifier/config/teams",
                       "guides/notifier/config/slack",
