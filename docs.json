@@ -17,12 +17,7 @@
     "defaultMode": "dark",
     "forceMode": true
   },
-  "background": {
-    "color": {
-      "dark": "#070200"
-    },
-    "decoration": "grid"
-  },
+  
   "navigation": {
     "anchors": [
       {
@@ -47,19 +42,71 @@
           {
             "group": "Interface Pro",
             "pages": [
-              "guides/interface-pro",
-              "guides/vue-generale",
-              "guides/reputation",
-              "guides/entreprise",
-              "guides/developpeurs",
-              "guides/abonnements"
+              {
+                "group": "Vue générale",
+                "pages": [
+                  "guides/interface/vue_generale/dashboard",
+                  "guides/interface/vue_generale/analyse"
+                ]
+              },
+              {
+                "group": "Réputation",
+                "pages": [
+                  "guides/interface/reputation/avis",
+                  "guides/interface/reputation/collecte",
+                  "guides/interface/reputation/automation",
+                  "guides/interface/reputation/widgets"
+                ]
+              },
+              {
+                "group": "Entreprise",
+                "pages": [
+                  "guides/interface/entreprise/fiche",
+                  "guides/interface/entreprise/membres"
+                ]
+              },
+              {
+                "group": "Développeurs",
+                "pages": [
+                  "guides/interface/developer/integrations"
+                ]
+              },
+              "guides/interface/subscription"
             ]
           },
           {
             "group": "Intégration",
             "pages": [
-              "guides/webhooks",
-              "guides/notifier",
+              {
+                "group": "Webhooks",
+                "pages": [
+                  "guides/webhooks/what",
+                  {
+                    "group": "Config",
+                    "pages": [
+                      "guides/webhook/config/woocommerce",
+                      "guides/webhook/config/shopify",
+                      "guides/webhook/config/prestashop",
+                      "guides/webhook/config/custom"                      
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Notifier",
+                "pages": [
+                  "guides/notifier/what",
+                  {
+                    "group": "Config",
+                    "pages": [
+                      "guides/notifier/config/teams",
+                      "guides/notifier/config/slack",
+                      "guides/notifier/config/telegram",
+                      "guides/notifier/config/discord"                      
+                    ]
+                  }
+                ]
+              },
               "guides/securite-authentification"
             ]
           }
@@ -98,8 +145,5 @@
       "github": "https://github.com/kisayo",
       "linkedin": "https://linkedin.com/company/kisayo"
     }
-  },
-  "fonts": {
-    "family": "Poppins"
   }
 }
