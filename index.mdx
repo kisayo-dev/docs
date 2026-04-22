@@ -4,45 +4,28 @@ description: "De l’apprentissage à la création. Suivez nos guides, connectez
 mode: "center"
 noSidebar: true
 hideToc: true
-icon: "house-user"
 ---
 
 <div className="h-5" />
 
 <CardGroup cols={3}>
   <Card 
-    title="Guide de l'interface Pro" 
+    title="Interface Pro" 
     icon="leaf" 
     href="/guides/interface-pro"
   >
     <div className="flex flex-col h-full justify-between">
-      <p className="text-sm">Maîtrisez l'interface de Kisayo for business et découvrez toutes les fonctionnalités disponibles pour booster votre visibilité.</p>
-      <img
-        src="/logo/pro-guide.png"
-        alt="Interface Pro"
-        className="mt-4 rounded-xl border border-white/5 group-hover:border-orange-500/30"
-      />
+      <p className="text-sm">Maîtrisez l'interface pro et découvrez toutes les fonctionnalités disponibles pour booster votre visibilité.</p>
+      <img src="/logo/pro-guide.png" className="mt-4 rounded-xl border border-white/10 group-hover:border-orange-500/30" />
     </div>
   </Card>
-  <Card title="Widget & intégration" icon="link" href="/guides/widgets">
+  <Card title="Widgets et intégration" icon="link" href="/guides/widgets">
     <div className="flex flex-col h-full justify-between">
       <p className="text-sm">Intégrez nos widgets directement sur votre site pour afficher vos avis et renforcer votre preuve sociale.</p>
-      <img
-        src="/logo/widgets.png"
-        alt="Widgets"
-        className="mt-4 rounded-xl border border-white/5"
-      />
+      <img src="/logo/widgets.png" className="mt-4 rounded-xl border border-white/10 group-hover:border-orange-500/30" />
     </div>
   </Card>
-
   <Card title="Référence API" icon="code" href="/api-reference/introduction">
-    Documentation technique complète pour les développeurs backend (Endpoints, Auth, Webhooks).
-
-    <img
-      src="/logo/api-ref.png"
-      alt="API Reference"
-      className="mt-4 rounded-xl border border-white/5"
-    />
     <div className="flex flex-col h-full justify-between">
       <p className="text-sm">Intégrez nos widgets directement sur votre site pour afficher vos avis et renforcer votre preuve sociale.</p>
       <img src="/logo/api-ref.png" className="mt-4 rounded-xl border border-white/10 group-hover:border-orange-500/30" />
@@ -52,11 +35,6 @@ icon: "house-user"
 
 <div className="h-20" />
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-  <div className="flex flex-col justify-center">
-    ## Intégrez l'API en 5 minutes
-
-    Configurer votre premier appel API doit être l'étape la plus simple de votre intégration. Avec des endpoints clairs, des exemples prêts à l'emploi et une authentification rapide, vous serez opérationnel en quelques minutes.
 <div className="relative mt-12 rounded-3xl overflow-hidden border border-white/5 bg-[#050505]">
   {/* Fond : Grille technique discrète */}
   <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:32px_32px]" />
@@ -74,16 +52,14 @@ icon: "house-user"
       </p>
       
       {/* Boutons format "Fin" (py-2 max) */}
-      <div className="flex gap-4 mt-10">
-        <a href="/quickstart" className="bg-[#FF9F24] text-white px-6 py-2.5 rounded-lg font-bold no-underline hover:opacity-90 flex items-center gap-2 transition-all">
-          <Icon icon="rocket" /> Commencer
+      <div className="flex gap-3 pt-2">
+        <a href="/quickstart" className="bg-[#FF9F24] text-white px-4 py-2 rounded-lg font-bold no-underline hover:opacity-90 transition-all flex items-center gap-2 text-[13px]">
+          <Icon icon="rocket" className="w-3.5 h-3.5" /> Commencer
         </a>
-
-        <a href="/api-reference" className="border border-white/20 text-white px-6 py-2.5 rounded-lg font-bold no-underline hover:bg-white/5 flex items-center gap-2 transition-all">
-          <Icon icon="code" /> Référence API
+        <a href="/api-reference" className="bg-white/5 border border-white/10 text-white px-4 py-2 rounded-lg font-bold no-underline hover:bg-white/10 transition-all flex items-center gap-2 text-[13px]">
+          <Icon icon="terminal" className="w-3.5 h-3.5" /> Référence API
         </a>
       </div>
-    </div>
     </div>
 
     {/* Colonne de Code : 60% de largeur pour une visibilité maximale */}
@@ -120,19 +96,22 @@ icon: "house-user"
 
 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
   <div className="rounded-2xl overflow-hidden bg-white/5 border border-white/10 p-8 flex justify-center shadow-inner">
-    <img src="/images/knowledge-illustration.png" alt="Approfondir vos connaissances" className="w-full max-w-sm drop-shadow-2xl" />
+    <img 
+      src="/images/knowledge-illustration.png" 
+      alt="Approfondir vos connaissances" 
+      className="w-full max-w-sm drop-shadow-2xl"
+    />
   </div>
 
   <div>
     ## 📚 Approfondir vos connaissances
-
+    
     Apprenez-en plus sur la plateforme, consultez nos guides détaillés et découvrez comment intégrer Kisayo à votre stack technique.
 
     <div className="flex gap-4 mt-10">
       <a href="/guides" className="bg-[#FF9F24] text-white px-6 py-2.5 rounded-lg font-bold no-underline hover:opacity-90 flex items-center gap-2 transition-all">
         <Icon icon="book-open" /> Guides
       </a>
-
       <a href="/documentation" className="border border-white/20 text-white px-6 py-2.5 rounded-lg font-bold no-underline hover:bg-white/5 flex items-center gap-2 transition-all">
         <Icon icon="file-lines" /> Documentation
       </a>
@@ -144,12 +123,16 @@ icon: "house-user"
 
 <div className="text-center max-w-4xl mx-auto px-4">
   ## Rejoignez une communauté de +3 000 développeurs
-
+  
   Posez vos questions, obtenez de l'aide et partagez vos ressources avec d'autres développeurs passionnés.
 
   <div className="mt-14 rounded-3xl overflow-hidden border border-white/10 shadow-2xl group transition-all hover:border-orange-500/30">
     <a href="https://discord.gg/kisayo" target="_blank" className="block border-none">
-      <img src="/images/discord-banner.jpeg" alt="Rejoignez notre Discord" className="w-full group-hover:scale-[1.01] transition-transform duration-700" />
+      <img 
+        src="/images/discord-banner.jpeg" 
+        alt="Rejoignez notre Discord" 
+        className="w-full group-hover:scale-[1.01] transition-transform duration-700"
+      />
     </a>
   </div>
 </div>
