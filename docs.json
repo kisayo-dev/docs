@@ -17,6 +17,12 @@
     "defaultMode": "dark",
     "forceMode": true
   },
+  "background": {
+    "color": {
+      "dark": "#190600"
+    },
+    "decoration": "gradient"
+  },
   "navigation": {
     "anchors": [
       {
